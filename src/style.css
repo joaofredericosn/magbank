@@ -1,14 +1,12 @@
-:root {
-    --mag-main-color: #8c00b2;
-    --mag-secondary-color: #f05656;
-}
+@import './_variables.css';
+@import './_utils.css';
 
 .bg-mag-main {
     background-color: var(--mag-main-color);
 }
 
 .mag-border-bottom {
-    border-bottom: .1875rem solid var(--mag-secondary-color);
+    border-bottom: .1875rem var(--mag-secondary-color) solid;
 }
 
 .navbar-brand-mag img {
@@ -20,7 +18,63 @@
     display: grid;
 }
 
-@media screen and (min-width: 768px){
+.mag-carousel-item-copy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.mag-banner-logo {
+    max-width: 20rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mag-banner-row {
+    flex-wrap: wrap;
+}
+
+.mag-credit-card {
+    padding: 1rem;
+    padding-top: 3.75rem;
+    padding-bottom: 4.6875rem;
+    font-size: 1.3rem;
+    color: var(--mag-copy-color);
+}
+
+.mag-credit-card i {
+    font-size: 2.375rem;
+}
+
+.mag-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.mag-icon-and-text {
+    display: grid;
+    grid-template-columns: 2.375rem auto;
+    gap: 1.2rem;
+    align-items: center;
+    margin-bottom: 1.875rem;
+}
+
+.mag-icon-and-text:last-of-type {
+    margin-bottom: 5rem;
+}
+
+.mag-icon-and-text i {
+    justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
     .navbar-brand-mag {
         margin-right: 6.5625rem;
     }
@@ -28,8 +82,30 @@
     .navbar-brand-mag img {
         width: 100%;
     }
-
+    
     .btn-group-mag {
         display: inline-flex;
+    }
+
+    .mag-banner-logo {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .mag-banner-row {
+        flex-wrap: nowrap;
+    }
+
+    .mag-credit-card {
+        padding-top: 6.15rem;
+        padding-bottom: 5rem;
+    }
+
+    .mag-title {
+        font-size: 3.5rem;
+    }
+
+    .mag-icon-and-text:last-of-type {
+        margin-bottom: 1.875rem;
     }
 }

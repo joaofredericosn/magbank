@@ -12,9 +12,9 @@
     "CSS",
     "Bootstrap",
     "Javascript",
-    "JQuery"
+    "jQuery"
   ],
-  "author": "João Frederico de Sousa Neto",
+  "author": "Bruce Cantarim",
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
