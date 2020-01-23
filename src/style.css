@@ -52,12 +52,6 @@
     font-size: 2.375rem;
 }
 
-.mag-title {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 3rem;
-}
-
 .mag-icon-and-text {
     display: grid;
     grid-template-columns: 2.375rem auto;
@@ -72,6 +66,35 @@
 
 .mag-icon-and-text i {
     justify-self: center;
+}
+
+.mag-about-us {
+    padding-top: 6.25rem;
+    padding-bottom: 7.5rem;
+    
+    color: white;
+    background-image: url(./assets/quem-somos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mag-about-us .mag-icon-and-text {
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.mag-about-us .mag-icon-and-text:first-of-type {
+    margin-top: 4rem;
+}
+
+.mag-about-us .mag-icon-and-text:last-of-type {
+    margin-bottom: 4rem;
+}
+
+
+.mag-about-us i {
+    font-size: 1.875rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -101,11 +124,12 @@
         padding-bottom: 5rem;
     }
 
-    .mag-title {
-        font-size: 3.5rem;
-    }
-
     .mag-icon-and-text:last-of-type {
         margin-bottom: 1.875rem;
+    }
+
+    .mag-about-us {
+        padding-top: 7.5rem;
+        padding-bottom: 6.25rem;
     }
 }
