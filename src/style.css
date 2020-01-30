@@ -97,6 +97,11 @@
     font-size: 1.875rem;
 }
 
+.mag-faq {
+    padding-top: 5rem;
+    padding-bottom: 5.625rem;
+}
+
 @media screen and (min-width: 768px) {
     .navbar-brand-mag {
         margin-right: 6.5625rem;
