@@ -61,7 +61,7 @@
 }
 
 .mag-credit-card .mag-icon-and-text:last-of-type {
-    margin-bottom: 5rem;
+    margin-bottom: 1.875rem;
 }
 
 .mag-icon-and-text i {
@@ -100,11 +100,29 @@
 .mag-faq {
     padding-top: 5rem;
     padding-bottom: 5.625rem;
+    color: #fff;
+    background-color: var(--mag-faq-background);
 }
 
 .mag-faq .mag-icon-and-text {
+    cursor: pointer;
     grid-template-columns: 1fr;
+    color: var(--mag-faq-inactive)
 }
+
+.mag-faq .card {
+    background: unset;
+    border-color: var(--mag-faq-color);
+}
+
+.mag-faq .card-header {
+    cursor: pointer;
+    background-color: var(--mag-faq-color);
+}
+
+.mag-faq .card-header h5 {
+    font-weight: 400;
+} 
 
 @media screen and (min-width: 768px) {
     .navbar-brand-mag {
